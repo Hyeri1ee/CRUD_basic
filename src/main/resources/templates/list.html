@@ -22,7 +22,7 @@
         <th>작성시간</th>
         <th>조회수</th>
     </tr>
-    <tr th:each="board: ${boardList}">
+    <tr th:each="board: ${boardList}"><!-- controller에 담은 이름과 같아야 함 -->
         <td th:text="${board.id}"></td>
         <td>
             <a th:text="${board.boardTitle}" th:href="@{|/${board.id}|}"></a>

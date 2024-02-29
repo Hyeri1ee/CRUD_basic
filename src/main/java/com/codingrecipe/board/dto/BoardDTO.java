@@ -18,6 +18,6 @@ public class BoardDTO {
     private String boardContents;
     private int boardHits;
     private String createdAt;
-    private int fileAttached;
-    // private List<MultipartFile> boardFile;
+    private int fileAttached;//파일 첨부 여부 확인 필드
+    private List<MultipartFile> boardFile;//파일 자체를 담기 위한 필드
 }
